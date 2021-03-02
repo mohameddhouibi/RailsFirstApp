@@ -84,10 +84,3 @@ group :development, :test do
   gem 'timecop'
   gem 'webdrivers', '~> 4.0'
 end
-
-group :test do
-  # RSpec, etc
-  gem 'ci_reporter'
-  gem 'ci_reporter_rspec'
-  gem "brakeman", :require => false
-end
