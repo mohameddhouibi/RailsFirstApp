@@ -4,7 +4,3 @@
 require File.expand_path('../config/application', __FILE__)
 
 CFPApp::Application.load_tasks
-
-require 'ci/reporter/rake/rspec'
-
-task :spec => 'ci:setup:rspec'
