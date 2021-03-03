@@ -3,4 +3,10 @@
 
 require File.expand_path('../config/application', __FILE__)
 
+task default: %w[test]
+
+task :test do
+  ruby "test/unittest.rb"
+end
+
 CFPApp::Application.load_tasks
