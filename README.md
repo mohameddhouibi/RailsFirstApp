@@ -119,6 +119,10 @@ vim /etc/nginx/sites-available jenkins.conlance.org
         }
         }       
 ---
+ ```bash
+
+systemctl restart nginx
+```  
 
 - Jenkins Configuration 
    
