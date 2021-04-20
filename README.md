@@ -149,8 +149,8 @@ systemctl restart jenkins
 
 certbot certonly --nginx
 ```
-        -Add your email into it and accept 
-        -It will automatically find the domain that we created in nginx and it will ask you for confirmation 
+            -Add your email into it and accept 
+            -It will automatically find the domain that we created in nginx and it will ask you for confirmation 
 
  ```bash
 
