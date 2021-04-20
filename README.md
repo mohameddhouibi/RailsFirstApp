@@ -38,12 +38,12 @@ sudo systemctl start jenkins
 Runs on port 8080.
 
 ### how to add an application
-    * Create a new job (Multi-Branch pipeline)
-    * Add source code Managment as (Gitlab) 
-    * select concerning branch 
-    * add your jenkinsFile into the branch you want to build 
-    * add your Docker-Compose file too 
-    * start the created Job
+    - Create a new job (Multi-Branch pipeline)
+    - Add source code Managment as (Gitlab) 
+    - select concerning branch 
+    - add your jenkinsFile into the branch you want to build 
+    - add your Docker-Compose file too 
+    - start the created Job
    
 ## How to setup GitLab with Jenkins
 
@@ -90,5 +90,12 @@ Runs on port 8080.
 
 ## Run Jenkins Behind Nginx 
 
+---
+    - Check if Nginx is installed on your server (```Nginx -v ```)
+    -
+    -
+    -
+    - 
+---
 
 
