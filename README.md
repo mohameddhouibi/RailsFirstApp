@@ -91,9 +91,7 @@ Runs on port 8080.
 ## Run Jenkins Behind Nginx 
 
 ---
-    - Check if Nginx is installed on your server ```bash
-sudo systemctl start jenkins
-```
+    - Check if Nginx is installed on your server ``` bash sudo systemctl start jenkins ```
     -
     -
     -
