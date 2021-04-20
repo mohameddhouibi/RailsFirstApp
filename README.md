@@ -161,7 +161,7 @@ if you check your domain in enabled-sites you will find it updated with the new 
  ```bash
 
 systemctl restart nginx
-```
+``` 
 And here you are ready to start using your Jenkins 🎉 
 ---
 
