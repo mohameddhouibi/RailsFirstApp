@@ -131,7 +131,8 @@ vim /etc/default jenkins
 ---   
     -Add below HTTP_PORT :
         HTTP_HOST = 127.0.0.1
-    -Edit Jenkins_ARGS by adding to it end : --httpListenAddress=$HTTP_HOST
+    -Edit Jenkins_ARGS by adding to it end : 
+        --httpListenAddress=$HTTP_HOST
 ---    
 
 
