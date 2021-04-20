@@ -93,7 +93,9 @@ Runs on port 8080.
 ----
     -Check if Nginx is installed if not install it 
 
-     ```bash nginx -v ```
+     ```bash 
+     nginx -v 
+     ```
 
     -otherwise if you have the latest version start configuring it 
 
