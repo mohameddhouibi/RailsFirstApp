@@ -48,7 +48,7 @@ Runs on port 8080.
 ## How to setup GitLab with Jenkins
 
 ### SSH Connection : 
----
+-----
 - [generate ssh keys on own server](https://docs.gitlab.com/ee/ssh/README.html) -> `PUBLIC` and `PRIVATE` ( no passphrase )
 - go to GitLab profile settings -> SSH keys -> add `PUBLIC` ssh key to GitLab = this will allow your Jenkins server to access your GitLab
 - also create full access GitLab `API access token` for Jenkins on your gitlab profile settings and keep it
@@ -86,16 +86,33 @@ Runs on port 8080.
     - **Build** = via your jenkinsfile
     - **Post-build action** -> multi-branch pipeline will automatically notify Gitlab of the Build result 
     - run the job
----
+-----
 
 ## Run Jenkins Behind Nginx 
 
+----
+ ```bash
+nginx -v 
+vim /etc/nginx/sites-available jenkins.conlance.org
+```
 ---
-    - Check if Nginx is installed on your server ``` bash sudo systemctl start jenkins ```
-    -
-    -
-    -
-    - 
+- Add this server into sites-available : 
+    --
+        server
+        {
+        server_name jenkins.conlance.org ;
+        location / {
+            proxy_set_header        Host $host:$server_port;
+            proxy_set_header        X-Real-IP $remote_addr;
+            proxy_set_header        X-Forwarded-For $proxy_add_x_forwarded_for;
+            proxy_set_header        X-Forwarded-Proto $scheme;
+
+            proxy_pass          http://127.0.0.1:8080;
+        }
+        }
+    --
 ---
+
+----
 
 
