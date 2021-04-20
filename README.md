@@ -142,6 +142,28 @@ vim /etc/default jenkins
 
 systemctl restart jenkins
 ```  
+---
+## Add Certbot to Jenkins Domain 
+
+ ```bash
+
+certbot certonly --nginx
+```
+        -Add your email into it and accept 
+        -It will automatically find the domain that we created in nginx and it will ask you for confirmation 
+
+ ```bash
+
+certbot install --nginx
+```
+if you check your domain in enabled-sites you will find it updated with the new generated SSL certificates restart nginx and everything is working 
+
+ ```bash
+
+systemctl restart nginx
+```
+
+---
 
 
 
