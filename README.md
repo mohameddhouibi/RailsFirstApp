@@ -133,7 +133,13 @@ vim /etc/default jenkins
         HTTP_HOST = 127.0.0.1
     -Edit Jenkins_ARGS by adding to it end : 
         --httpListenAddress=$HTTP_HOST
----    
+---  
+ ```bash
+
+systemctl restart jenkins
+```  
+
+
 
 
 
