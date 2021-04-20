@@ -121,6 +121,7 @@ vim /etc/nginx/sites-available jenkins.conlance.org
 ---
 
 - Jenkins Configuration 
+   
     edit the jenkins default config file :
 ---
  ```bash
@@ -133,6 +134,6 @@ vim /etc/default jenkins
     -Edit Jenkins_ARGS by adding to it end : --httpListenAddress=$HTTP_HOST
 ---    
 
-----
+
 
 
