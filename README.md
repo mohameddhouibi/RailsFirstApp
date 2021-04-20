@@ -91,8 +91,15 @@ Runs on port 8080.
 ## Run Jenkins Behind Nginx 
 
 ----
+    -Check if Nginx is installed if not install it 
+
+     ```bash
+nginx -v ```
+
+    -otherwise if you have the latest version start configuring it 
+
  ```bash
-nginx -v 
+
 vim /etc/nginx/sites-available jenkins.conlance.org
 ```
 ---
