@@ -162,7 +162,7 @@ if you check your domain in enabled-sites you will find it updated with the new 
 
 systemctl restart nginx
 ```
-
+Ready to start using your Jenkins 🎉 
 ---
 
 
