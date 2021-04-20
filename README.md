@@ -3,10 +3,9 @@
 ## WELCOME
 
 Welcome to the Jenkins user documentation - for people wanting to use Jenkins’s existing functionality and plugin features.
-
-### Important information
+---
 The server is provisioned via the [ansible-2021](https://gitlab.conlance.org/devOps/ansible-2021) script.
-
+---
 
 ## What is Jenkins?
 
@@ -20,14 +19,15 @@ Jenkins can be installed through native system packages, Docker, or even run sta
 
 ### Prerequisite Requirements
 
-* OpenJDK JDK / JRE 8 - 64 bits
-* Jenkins (LTS)
-* Docker
-* Docker-Compose
-* Ruby 2.7.2 
+- OpenJDK JDK / JRE 8 - 64 bits
+- Jenkins (LTS)
+- Docker
+- Docker-Compose
+- Ruby 2.7.2 
 
+---
 Make sure you have Ruby and Postgres installed in your environment.Check in the Gemfile for the exact supported version. use bundler to install all required gems.We are also making the assumption that you're familiar with how Rails apps are setup and deployed.  If this is not the case then you'll want to refer to documentation that will bridge any gaps in the instructions below.
-
+---
 
 Start the service:
 
@@ -89,4 +89,5 @@ Runs on port 8080.
 
 ## Run Jenkins Behind Nginx 
 
-    
+
+
