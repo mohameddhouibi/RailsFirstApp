@@ -91,13 +91,13 @@ Runs on port 8080.
 ## Run Jenkins Behind Nginx 
 
 ----
-    -Check if Nginx is installed if not install it 
+    - Check if Nginx is installed if not install it 
 
  ```bash
 
 nginx -v
 ```
-    -otherwise if you have the latest version start configuring it 
+    - Otherwise if you have the latest version start configuring it 
 
  ```bash
 
