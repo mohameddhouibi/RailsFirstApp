@@ -119,9 +119,17 @@ vim /etc/nginx/sites-available jenkins.conlance.org
         }
         }       
 ---
+
+- Configure jenkins to be listening on http://127.0.0.1:8080
 ---
--sssss
----
+ ```bash
+
+vim /etc/default jenkins
+```
+-Add below HTTP_PORT :
+    HTTP_HOST = 127.0.0.1
+-Edit Jenkins_ARGS by adding to it end : 
+    --httpListenAddress=$HTTP_HOST
 
 ----
 
